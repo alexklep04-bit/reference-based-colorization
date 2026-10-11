@@ -16,7 +16,7 @@ how viewpoint difference affects result quality.
 
 ## Tasks
 
-1. [ ] Review existing automatic and reference-based (exemplar-based) image colorization methods.
+1. [x] Review existing automatic and reference-based (exemplar-based) image colorization methods.
 2. [ ] Compare existing colorization tools and services on the market, and available open-source models.
 3. [ ] Collect a small test set of image pairs: a grayscale photograph and a color reference of the same object from a different viewpoint.
 4. [ ] Build a simple prototype that colorizes a grayscale image using an existing pretrained reference-based model.
