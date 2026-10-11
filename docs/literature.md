@@ -1,7 +1,7 @@
 # Literature review: automatic and reference-based image colorization
 
 Task 1 of the term paper. Draft for Chapter 2 ("Analysis of literature and methods").
-Citation style: IEEE, as required by the faculty report template.
+Citation style: IEEE.
 
 ## 1. Scope and review method
 
