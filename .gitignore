@@ -1,0 +1,25 @@
+# Data and model weights (too large / not redistributable)
+data/pairs/*
+!data/pairs/.gitkeep
+models/
+checkpoints/
+*.pth
+*.ckpt
+
+# Results that can be regenerated
+results/*
+!results/.gitkeep
+
+# Signed topic formalization (contains signatures and personal data)
+Topic-formalization*.docx
+Topic-formalization*.pdf
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# macOS
+.DS_Store
