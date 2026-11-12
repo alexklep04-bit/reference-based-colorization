@@ -1,18 +1,24 @@
-# Data and model weights (too large / not redistributable)
-data/pairs/*
-!data/pairs/.gitkeep
-models/
-checkpoints/
+# Model weights and third-party code (downloaded by scripts/setup_models.sh)
+weights/
+third_party/
 *.pth
 *.ckpt
 
-# Results that can be regenerated
+# Data (downloaded or photographed; see data/README.md)
+data/pairs/*
+!data/pairs/.gitkeep
+data/abo/
+
+# Results that can be regenerated (final figures are copied to docs/figures/)
 results/*
 !results/.gitkeep
 
 # Signed topic formalization (contains signatures and personal data)
 Topic-formalization*.docx
 Topic-formalization*.pdf
+
+# Presentations are kept locally
+presentation/
 
 # Python
 __pycache__/
@@ -21,5 +27,6 @@ __pycache__/
 venv/
 .ipynb_checkpoints/
 
-# macOS
+# Local tooling
+.claude/
 .DS_Store
