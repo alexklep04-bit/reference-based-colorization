@@ -50,20 +50,19 @@ with gr.Blocks(title="Reference-based colorization") as demo:
         "taken from a different viewpoint."
     )
     with gr.Row():
-        target_in = gr.Image(label="1. Grayscale photograph", type="numpy", height=300)
-        reference_in = gr.Image(label="2. Colour reference (same object, other viewpoint)", type="numpy", height=300)
+        target_in = gr.Image(label="1. Grayscale photograph", type="numpy")
+        reference_in = gr.Image(label="2. Colour reference (same object, other viewpoint)", type="numpy")
+        result_out = gr.Image(label="Result with the reference", interactive=False)
+        automatic_out = gr.Image(label="Automatic result (no reference)", interactive=False)
     with gr.Row():
         vivid_in = gr.Checkbox(label="Vivid colours (x1.25, setting of the original model)", value=False)
         button = gr.Button("Colorize", variant="primary")
-    with gr.Row():
-        gray_out = gr.Image(label="Input as seen by the model", height=300)
-        result_out = gr.Image(label="Result with the reference", height=300)
-        automatic_out = gr.Image(label="Automatic result (no reference)", height=300)
+    note_out = gr.Markdown()
     with gr.Accordion("How the reference was used", open=False):
         with gr.Row():
-            warped_out = gr.Image(label="Reference colours matched to the photograph (before refinement)", height=260)
-            confidence_out = gr.Image(label="Matching confidence (bright = reliable match)", height=260)
-    note_out = gr.Markdown()
+            gray_out = gr.Image(label="Input as seen by the model (lightness only)", interactive=False)
+            warped_out = gr.Image(label="Reference colours matched to the photograph (before refinement)", interactive=False)
+            confidence_out = gr.Image(label="Matching confidence (bright = reliable match)", interactive=False)
     gr.Examples(
         examples=[
             [str(EXAMPLES / "stool_grayscale.jpg"), str(EXAMPLES / "stool_reference_90deg.jpg")],
