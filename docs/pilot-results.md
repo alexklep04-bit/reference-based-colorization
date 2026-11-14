@@ -4,6 +4,7 @@ First results for tasks 3-5 (12 November 2026). Pilot set: 12 objects from the p
 (turntable images, one view every 5 degrees, CC BY 4.0), 4 target views per object, 48 targets.
 The target is converted to grayscale; its original colour image is the ground truth.
 Reproduce with `src/prepare_abo_pilot.py`, `src/run_pilot.py`, `src/make_figures.py`.
+Raw measurements (1,152 rows): [`results/pilot/metrics.csv`](../results/pilot/metrics.csv).
 
 ![PSNR against viewpoint difference](figures/pilot_psnr_vs_angle.png)
 

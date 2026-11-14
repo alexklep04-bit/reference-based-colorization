@@ -77,8 +77,9 @@ T. Dideriksen, H. Arora, M. Guillaumin, J. Malik, "ABO: Dataset and Benchmarks f
 Object Understanding", CVPR 2022. https://amazon-berkeley-objects.s3.amazonaws.com/index.html
 
 The pilot experiment uses turntable ("spin") images of this dataset, licensed under the Creative
-Commons Attribution 4.0 International licence (CC BY 4.0). Credit for the data: Amazon.com. Credit
-for building the dataset: Matthieu Guillaumin, Thomas Dideriksen, Kenan Deng, Himanshu Arora
-(Amazon.com), Jasmine Collins and Jitendra Malik (UC Berkeley). The images are downloaded by
-`src/prepare_abo_pilot.py` and are not part of this repository; figures in `docs/figures/` show
-resized and processed versions of them.
+Commons Attribution 4.0 International licence (CC BY 4.0, https://creativecommons.org/licenses/by/4.0/).
+Credit for the data: Amazon.com. Credit for building the dataset: Matthieu Guillaumin, Thomas
+Dideriksen, Kenan Deng, Himanshu Arora (Amazon.com), Jasmine Collins and Jitendra Malik
+(UC Berkeley). The original images are downloaded by `src/prepare_abo_pilot.py` and are not part of
+this repository. The figures in `docs/figures/` and the sample images in `examples/` are derived
+from them (resized, cropped, converted to grayscale or colorized).

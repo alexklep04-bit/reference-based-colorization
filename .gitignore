@@ -9,9 +9,13 @@ data/pairs/*
 !data/pairs/.gitkeep
 data/abo/
 
-# Results that can be regenerated (final figures are copied to docs/figures/)
+# Results that can be regenerated (final figures are copied to docs/figures/);
+# only the pilot measurements are kept
 results/*
 !results/.gitkeep
+!results/pilot/
+results/pilot/*
+!results/pilot/metrics.csv
 
 # Signed topic formalization (contains signatures and personal data)
 Topic-formalization*.docx
